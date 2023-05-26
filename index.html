@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generating a Cube</title>
+</head>
+<body>
+    <h2>Generate a Cube</h2>
+    <form id="cube-form">
+        <label for="side-length">Side Length:</label>
+        <input type="number" id="side-length" name="side-length" required><br><br>
+
+        <label for="color-top">Top Color (RGB): </label>
+        <input type="text" id="color-top" name="color-top" required><br><br>
+
+        <label for="color-left">Left Color (RGB):</label>
+        <input type="text" id="color-left" name="color-left" required><br><br>
+
+        <label for="color-right">Right Color (RGB):</label>
+        <input type="text" id="color-right" name="color-right" required><br><br>
+
+        <label for="color-front">Front Color (RGB):</label>
+        <input type="text" id="color-front" name="color-front" required><br><br>
+
+        <label for="color-back">Back Color (RGB):</label>
+        <input type="text" id="color-back" name="color-back" required><br><br>
+
+        <label for="color-bottom">Bottom Color (RGB):</label>
+        <input type="text" id="color-bottom" name="color-bottom" required><br><br>
+
+        <button id="generate-button">Generate Cube</button>
+    </form>
+
+    <canvas id="main-canvas" width="800" height="600"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
